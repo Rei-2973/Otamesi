@@ -1,1 +1,55 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <title>r1ce.farm</title>
+  <style>
+    body {
+      margin: 0;
+      background-color: black;
+      color: white;
+      font-family: sans-serif;
+      text-align: center;
+      height: 100vh;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+    }
 
+    .title {
+      font-size: 32px;
+      font-weight: bold;
+      margin-bottom: 40px;
+    }
+
+    .message {
+      font-size: 20px;
+      letter-spacing: 3px;
+      opacity: 0.5;
+    }
+
+    .hint {
+      margin-top: 30px;
+      font-size: 14px;
+      opacity: 0.8;
+    }
+
+    .hidden {
+      display: none;
+    }
+  </style>
+</head>
+<body onclick="handleClick()">
+  <div class="title">r1ce.farm</div>
+  <div class="message">TOUCH&nbsp;&nbsp;THE&nbsp;&nbsp;SCREEN</div>
+  <div class="hint">ロード完了、クリックおよびタップしてください</div>
+
+  <script>
+    function handleClick() {
+      alert("画面がタップされました！");
+      // ここに画面遷移や演出を追加可能
+      // location.href = "main.html"; // 例：別ページに移動する場合
+    }
+  </script>
+</body>
+</html>
